@@ -6,6 +6,20 @@ This is a class to control progresses.
 
 You can find the complete javadoc [here](http://157239n.com/page/pages/javadoc/progress/index.html).
 
+## Installation
+
+Include this in your build.gradle file:
+
+```
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'com.github.157239n:Progress:-SNAPSHOT'
+}
+```
+
 ## Simple usage
 
 You can create a new Progress: `Progress progress = new Progress(0.5); // this means the progress is half way done`
