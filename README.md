@@ -2,6 +2,10 @@
 
 This is a class to control progresses.
 
+## Technical documentation
+
+You can find the complete javadoc [here](http://157239n.com/page/pages/javadoc/progress/index.html).
+
 ## Simple usage
 
 You can create a new Progress: `Progress progress = new Progress(0.5); // this means the progress is half way done`
