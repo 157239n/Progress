@@ -227,6 +227,7 @@ public class Progress {
             Thread.yield();
         }
         printProgress(clearString, width, 100);
+        System.out.println();
     }
 
     /**
