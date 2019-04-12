@@ -1,0 +1,28 @@
+buildscript {
+    repositories {jcenter()}
+    dependencies {classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.2'}
+}
+
+plugins {
+    id 'java-library'
+    id 'com.github.johnrengelman.shadow' version '4.0.2'
+}
+
+dependencies {
+    api 'org.apache.commons:commons-math3:3.6.1'
+    implementation 'com.google.guava:guava:23.0'
+    implementation 'org.processing:core:3.3.7'
+    implementation 'org.json:json:20140107'
+    implementation fileTree("libs")
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.json:json:20140107'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+    maven { url 'https://jitpack.io' } // this is for custom libraries that you can upload to Jitpack for free
+}
+
+//jar {manifest {attributes 'Main-Class': mainClassName}}
